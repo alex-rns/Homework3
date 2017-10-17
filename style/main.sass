@@ -1,0 +1,57 @@
+//$bg-white: #ffffff
+//$bg-black: #111111
+//$white-text: #ffffff
+//$black-text: #111111
+$gray-text: #666666
+$accent: #e8bf5d
+
+*
+  box-sizing: border-box
+
+body
+  margin: 0
+  padding: 0
+  font-size: 14px
+  //line-height: 1.75
+  line-height: 25px
+  font-family: Raleway, sans-serif
+  background-color: $bg-col
+  text-transform: uppercase
+section
+  padding: 50px 0
+header
+  padding-top: 20px
+  h2
+    text-align: center
+    font-size: 40px
+    font-weight: 500
+  p
+    font-weight: 400
+    max-width: 750px
+    margin: 0 auto
+    padding-bottom: 20px
+a, a:hover, a:focus
+  cursor: pointer
+  color: #ffffff
+  text-decoration: none
+.button
+  cursor: pointer
+  display: inline-block
+  border-radius: 50px
+  background: $blue
+  padding: 25px 80px
+  margin: 70px
+  font-size: 20px
+  font-weight: 700
+  color: #ffffff
+  transition: background 0.5s ease
+  &:hover
+    background: lighten($blue, 10%)
+  &:active
+    background: darken($blue, 10%)
+.overflow
+  overflow: hidden
+.container
+  width: 1170px
+  margin: 0 auto
+  text-align: center
