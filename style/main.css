@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "PlayfairDisplayRegular";
+  src: url("../fonts/PlayfairDisplay-Regular.ttf"); }
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OpenSans-Regular.ttf"); }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font: 14px OpenSansRegular, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; }
+
+a {
+  color: #111111;
+  cursor: pointer;
+  text-decoration: none; }
+
+h1 {
+  font-family: PlayfairDisplayRegular, serif;
+  line-height: 60px;
+  font-size: 60px;
+  margin: 0; }
+
+h2 {
+  margin: 0; }
+
+section {
+  padding-bottom: 50px; }
+
+.section-header {
+  padding: 100px 10px 60px; }
+  .section-header h2 {
+    font-size: 40px;
+    font-weight: bold; }
+  .section-header p {
+    line-height: 30px;
+    font-weight: 400;
+    color: #666666;
+    max-width: 750px;
+    margin-bottom: 0; }
+
+.header-wrapper {
+  border-left: 2px solid #e8bf5d;
+  padding-left: 30px; }
+
+.overflow {
+  overflow: hidden; }
+
+.container {
+  width: 1170px;
+  margin: 0 auto; }
+
+button {
+  font: 16px PlayfairDisplayRegular, serif;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 50px;
+  background: #e8bf5d;
+  padding: 16px 60px;
+  -webkit-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease; }
+  button:hover {
+    background: #eed18a; }
+  button:active {
+    background: #e2ad30; }
+
+.black-section {
+  background: #111111; }
+  .black-section h2, .black-section h3 {
+    color: #ffffff; }
+  .black-section p {
+    color: #b9b9b9; }
+
+.yellow-line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background: #e8bf5d; }
+
+.main-header {
+  height: 110px;
+  padding: 32px 0; }
+  .main-header .logo {
+    margin-top: 14px;
+    float: left; }
+  .main-header .main-nav {
+    text-transform: uppercase;
+    float: right; }
+    .main-header .main-nav ul li {
+      margin: 0 20px;
+      display: inline-block; }
+
+.welcome-section {
+  color: #ffffff;
+  background: url("../img/our-hero.png") 50% 0 no-repeat;
+  background-size: cover;
+  height: calc(100vh - 110px); }
+  .welcome-section h2 {
+    font-size: 31px; }
+  .welcome-section .welcome-info {
+    width: 970px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 10%; }
+    .welcome-section .welcome-info button {
+      margin: 12px 0 0;
+      float: right; }
+    .welcome-section .welcome-info .welcome-infowrap {
+      margin-left: 40px;
+      text-align: left;
+      float: left; }
+
+.about-section .history, .about-section .expertise {
+  vertical-align: top;
+  max-width: 550px;
+  display: inline-block; }
+
+.history-list {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+  .history-list dt {
+    font-weight: bold;
+    margin-top: 35px; }
+  .history-list dd {
+    line-height: 21px;
+    margin-left: 60px;
+    margin-top: -35px;
+    padding: 10px; }
+
+.expertise {
+  margin-left: 30px; }
+  .expertise p {
+    margin-top: 25px;
+    line-height: 31px;
+    color: #666666; }
+
+.practice-section .practice-list li {
+  margin-bottom: 70px;
+  padding-left: 150px; }
