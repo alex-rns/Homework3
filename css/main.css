@@ -15,6 +15,7 @@
   box-sizing: border-box; }
 
 body {
+  counter-reset: section;
   font: 14px OpenSansRegular, serif;
   margin: 0;
   padding: 0;
@@ -38,7 +39,8 @@ section {
   padding-bottom: 50px; }
 
 .section-header {
-  padding: 100px 10px 60px; }
+  position: relative;
+  padding: 100px 0 60px; }
   .section-header h2 {
     font-family: PlayfairDisplayRegular, serif;
     font-size: 40px;
@@ -49,6 +51,13 @@ section {
     color: #666666;
     max-width: 750px;
     margin-bottom: 0; }
+  .section-header:before {
+    opacity: .1;
+    top: 20px;
+    position: absolute;
+    font-size: 200px;
+    counter-increment: section;
+    content: "0" counter(section) ""; }
 
 .header-wrapper {
   border-left: 2px solid #e8bf5d;
@@ -60,6 +69,22 @@ section {
 .container {
   width: 1170px;
   margin: 0 auto; }
+
+.black-section {
+  background: #111111; }
+  .black-section .section-header:before {
+    color: #ffffff; }
+  .black-section h2, .black-section h3 {
+    color: #ffffff; }
+  .black-section p {
+    color: #b9b9b9; }
+
+.yellow-line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background: #e8bf5d; }
 
 button {
   font: 16px PlayfairDisplayRegular, serif;
@@ -77,20 +102,6 @@ button {
     background: #eed18a; }
   button:active {
     background: #e2ad30; }
-
-.black-section {
-  background: #111111; }
-  .black-section h2, .black-section h3 {
-    color: #ffffff; }
-  .black-section p {
-    color: #b9b9b9; }
-
-.yellow-line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 2px;
-  background: #e8bf5d; }
 
 .main-header {
   height: 110px;
@@ -234,4 +245,90 @@ button {
     font-size: 90px; }
 
 .recent-publications article {
+  margin-right: 20px;
+  display: inline-block;
+  width: 370px;
+  border-bottom: 3px #e8bf5d solid; }
+  .recent-publications article:nth-child(3n+1) {
+    margin-right: 0; }
+  .recent-publications article h2 {
+    margin-top: 30px; }
+  .recent-publications article h3 {
+    display: inline; }
+    .recent-publications article h3 span {
+      color: #666;
+      font-style: italic; }
+  .recent-publications article p {
+    color: #666666;
+    line-height: 31px;
+    margin: 30px 0; }
+  .recent-publications article .date-publication {
+    float: right; }
+  .recent-publications article .comments, .recent-publications article .share {
+    cursor: pointer;
+    margin-top: 0;
+    display: inline-block; }
+    .recent-publications article .comments:before, .recent-publications article .share:before {
+      margin-right: 10px;
+      content: "\f086";
+      color: #111111;
+      font-size: 20px;
+      font-family: FontAwesome,sans-serif; }
+  .recent-publications article .share {
+    padding: 0;
+    cursor: pointer;
+    background: #e8bf5d;
+    font: 16px OpenSansRegular, serif;
+    line-height: 31px;
+    outline: none;
+    background: inherit;
+    border: none;
+    float: right; }
+    .recent-publications article .share:before {
+      content: "\f064"; }
+
+.faq-section .faq {
+  width: 500px;
+  padding: 46px;
+  background: #e8bf5d;
+  border-radius: 15px;
+  margin-bottom: 90px; }
+  .faq-section .faq p {
+    color: #111111;
+    line-height: 31px; }
+
+.free-contact .our-contact {
+  width: 870px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 170px -75px black;
+  box-shadow: 0 0 170px -75px black; }
+
+.free-contact form {
+  display: inline-block;
+  padding: 50px;
+  width: 450px; }
+  .free-contact form input, .free-contact form textarea {
+    resize: none;
+    padding-left: 15px;
+    width: 350px;
+    line-height: 45px;
+    border: 0;
+    border-bottom: 1px #b9b9b9 solid;
+    color: #b9b9b9;
+    font-style: italic;
+    font-size: 14px;
+    display: block; }
+    .free-contact form input:active, .free-contact form textarea:active {
+      border: none; }
+  .free-contact form button {
+    margin-top: 40px; }
+
+.free-contact .map {
   display: inline-block; }
+  .free-contact .map iframe {
+    margin-bottom: 0;
+    width: 330px;
+    height: 330px; }
+
+footer {
+  height: 80px; }

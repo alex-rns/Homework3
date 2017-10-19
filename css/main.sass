@@ -16,6 +16,7 @@ $accent: #e8bf5d
   box-sizing: border-box
 
 body
+  counter-reset: section
   font: 14px OpenSansRegular, serif
   margin: 0
   padding: 0
@@ -35,7 +36,8 @@ h2
 section
   padding-bottom: 50px
 .section-header
-  padding: 100px 10px 60px
+  position: relative
+  padding: 100px 0 60px
   h2
     font-family: PlayfairDisplayRegular, serif
     font-size: 40px
@@ -46,6 +48,13 @@ section
     color: #666666
     max-width: 750px
     margin-bottom: 0
+  &:before
+    opacity: .1
+    top: 20px
+    position: absolute
+    font-size: 200px
+    counter-increment: section
+    content: "0" counter(section) ""
 
 .header-wrapper
   border-left: 2px solid $accent
@@ -54,8 +63,28 @@ section
 .overflow
   overflow: hidden
 .container
+  //counter-reset: qwe 0
   width: 1170px
   margin: 0 auto
+//.qwe:before
+//  counter-increment: qwe 1
+//  content: "qwe"
+
+.black-section
+  background: $black
+  .section-header:before
+    color: $white
+  h2, h3
+    color: $white
+  p
+    color: #b9b9b9
+.yellow-line
+  &::before
+    content: ""
+    position: absolute
+    height: 100%
+    width: 2px
+    background: $accent
 button
   font: 16px PlayfairDisplayRegular, serif
   font-weight: bold
@@ -70,20 +99,6 @@ button
     background: lighten($accent, 10%)
   &:active
     background: darken($accent, 10%)
-.black-section
-  background: $black
-  h2, h3
-    color: $white
-  p
-    color: #b9b9b9
-.yellow-line
-  &::before
-    content: ""
-    position: absolute
-    height: 100%
-    width: 2px
-    background: $accent
-
 
 .main-header
   height: 110px
@@ -113,7 +128,6 @@ button
   //  background: url("../img/welcome-gradient.png") repeat-x
   //  background-size: contain
   h2
-
     font-size: 31px
 
   .welcome-info
@@ -129,6 +143,7 @@ button
       margin-left: 40px
       text-align: left
       float: left
+
 
 
 .about-section
@@ -242,11 +257,91 @@ button
 
 .recent-publications
   article
+    margin-right: 20px
     display: inline-block
+    width: 370px
+    border-bottom: 3px $accent solid
+    &:nth-child(3n+1)
+      margin-right: 0
+    h2
+      margin-top: 30px
+    h3
+      display: inline
+      span
+        color: #666
+        font-style: italic
+    p
+      color: #666666
+      line-height: 31px
+      margin: 30px 0
+
+    .date-publication
+      float: right
+    .comments, .share
+      cursor: pointer
+      margin-top: 0
+      display: inline-block
+      &:before
+        margin-right: 10px
+        content: "\f086"
+        color: $black
+        font-size: 20px
+        font-family: FontAwesome,sans-serif
+    .share
+      padding: 0
+      cursor: pointer
+      background: $accent
+      font: 16px OpenSansRegular, serif
+      line-height: 31px
+      outline: none
+      background: inherit
+      border: none
+      float: right
+      &:before
+        content: "\f064"
+.faq-section
+  .faq
+    width: 500px
+    padding: 46px
+    background: $accent
+    border-radius: 15px
+    margin-bottom: 90px
+    p
+      color: $black
+      line-height: 31px
+
+.free-contact
+  .our-contact
+    width: 870px
+    margin: 0 auto
+    box-shadow: 0 0 170px -75px rgba(0,0,0,1)
+  form
+    display: inline-block
+    padding: 50px
+    width: 450px
+
+    input, textarea
+      resize: none
+      padding-left: 15px
+      width: 350px
+      line-height: 45px
+      border: 0
+      border-bottom: 1px #b9b9b9 solid
+      color: #b9b9b9
+      font-style: italic
+      font-size: 14px
+      display: block
+      &:active
+        border: none
+    button
+      margin-top: 40px
+  .map
+    display: inline-block
+    iframe
+      margin-bottom: 0
+      width: 330px
+      height: 330px
 
 
-//a, a:hover, a:focus
-//  cursor: pointer
-//  color: #ffffff
-//  text-decoration: none
-//.
+footer
+  height: 80px
