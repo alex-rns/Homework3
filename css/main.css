@@ -274,24 +274,18 @@ button {
     cursor: pointer;
     margin-top: 0;
     display: inline-block; }
-    .publications-section article .comments:before, .publications-section article .share:before {
+    .publications-section article .comments .fa, .publications-section article .share .fa {
       margin-right: 10px;
-      content: "\f086";
-      color: #111111;
-      font-size: 20px;
-      font-family: FontAwesome,sans-serif; }
+      font-size: 20px; }
   .publications-section article .share {
     padding: 0;
     cursor: pointer;
-    background: #e8bf5d;
     font: 16px OpenSansRegular, serif;
     line-height: 31px;
     outline: none;
     background: inherit;
     border: none;
     float: right; }
-    .publications-section article .share:before {
-      content: "\f064"; }
 
 .faq-section .faq {
   width: 500px;
