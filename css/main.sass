@@ -14,7 +14,6 @@ $accent: #e8bf5d
 
 *
   box-sizing: border-box
-
 body
   counter-reset: section
   font: 14px OpenSansRegular, serif
@@ -22,7 +21,6 @@ body
   padding: 0
   background-color: $white
 a
-
   color: $black
   cursor: pointer
   text-decoration: none
@@ -40,7 +38,7 @@ section
   padding: 100px 0 60px
   h2
     font-family: PlayfairDisplayRegular, serif
-    font-size: 40px
+    font-size: 30px
     font-weight: bold
   p
     line-height: 30px
@@ -50,22 +48,19 @@ section
     margin-bottom: 0
   &:before
     opacity: .1
-    top: 20px
+    top: 15px
     position: absolute
     font-size: 200px
     counter-increment: section
     content: "0" counter(section) ""
-
 .header-wrapper
   border-left: 2px solid $accent
   padding-left: 30px
-
 .overflow
   overflow: hidden
 .container
   width: 1170px
   margin: 0 auto
-
 .black-section
   background: $black
   .section-header:before
@@ -88,7 +83,6 @@ button
     background: lighten($accent, 10%)
   &:active
     background: darken($accent, 10%)
-
 .main-header
   height: 110px
   padding: 32px 0
@@ -107,6 +101,7 @@ button
     .active
       border-bottom: 4px $accent solid
 
+//===================welcome-section=================
 .welcome-section
   position: relative
   color: $white
@@ -123,7 +118,6 @@ button
     background: url("../img/welcome-gradient.png") repeat-x
   h2
     font-size: 31px
-
   .welcome-info
     width: 970px
     left: 50%
@@ -138,10 +132,8 @@ button
       text-align: left
       float: left
 
-
-
+//===================about-section=================
 .about-section
-
   .history, .expertise
     vertical-align: top
     max-width: 550px
@@ -165,8 +157,7 @@ button
     line-height: 31px
     color: #666666
 
-
-
+//===================practice-section=================
 .practice-section
   .practice-list
     li
@@ -176,7 +167,6 @@ button
       width: 550px
       display: inline-block
       vertical-align: top
-
 .private-client-service:before, .labour-and-employment:before, .cyber-sequre:before, .real-estate:before
   color: $accent
   font-size: 55px
@@ -184,7 +174,6 @@ button
   position: absolute
   left: 40px
   top: 10px
-
 .private-client-service:before
   content: "\f2b5"
 .labour-and-employment:before
@@ -194,7 +183,8 @@ button
 .real-estate:before
   content: "\f015"
 
-.meet-our-attorney
+//===================team-section=================
+.team-section
   .team-list
     padding: 0
     li
@@ -206,12 +196,12 @@ button
         margin-right: 0
     h3
       margin-bottom: 0
-
     p
       margin-top: 5px
       color: #666
 
-.our-clients-say
+//===================clients-section=================
+.clients-section
   position: relative
   &:before
     content: ""
@@ -222,9 +212,7 @@ button
     left: 0
     right: 0
     opacity: 0.05
-
-.our-clients-say
-
+.clients-section
     img
       margin-top: 75px
       box-shadow: 20px 20px 0 0 rgba(232,191,93,1)
@@ -248,8 +236,8 @@ button
         content: "\201C"
         font-size: 90px
 
-
-.recent-publications
+//===================publications-section=================
+.publications-section
   article
     margin-right: 20px
     display: inline-block
@@ -268,7 +256,6 @@ button
       color: #666666
       line-height: 31px
       margin: 30px 0
-
     .date-publication
       float: right
     .comments, .share
@@ -293,6 +280,8 @@ button
       float: right
       &:before
         content: "\f064"
+
+//===================faq-section=================
 .faq-section
   .faq
     width: 500px
@@ -304,16 +293,16 @@ button
       color: $black
       line-height: 31px
 
-.free-contact
+//===================contact-section=================
+.contact-section
   .our-contact
     width: 870px
     margin: 0 auto
     box-shadow: 0 0 170px -75px rgba(0,0,0,1)
-  form
+  .form-message
     display: inline-block
     padding: 50px
     width: 450px
-
     input, textarea
       outline: none
       resize: none
@@ -323,20 +312,21 @@ button
       border: 0
       border-bottom: 1px #b9b9b9 solid
       color: #666666
+      font-family: OpenSansRegular, sans-serif
       font-style: italic
-      font-size: 14px
       display: block
+      margin-bottom: 10px
+    textarea
+      margin-top: 20px
+      line-height: 20px
     button
       margin-top: 40px
-
   .map
     display: inline-block
     iframe
       box-shadow: -20px 20px 0 0 rgba(232,191,93,1)
-      margin-bottom: 0
-      width: 330px
-      height: 330px
-
+      width: 370px
+      height: 370px
 
 footer
   a
@@ -352,4 +342,5 @@ footer
     line-height: 50px
     float: right
     li
+      margin-right: 10px
       display: inline-block

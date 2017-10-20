@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <title>Homework#3</title>
@@ -36,7 +36,6 @@
           <li>
             <a href="#contact">contact</a>
           </li>
-
         </ul>
       </nav>
     </div>
@@ -44,7 +43,7 @@
 
   <section class="welcome-section">
     <div class="container">
-      <div class="welcome-info yellow-line">
+      <div class="welcome-info">
         <div class="welcome-infowrap header-wrapper">
           <h1>Adam Suaerez</h1>
           <h2>Laywer</h2>
@@ -109,7 +108,7 @@
         </div>
   </section>
 
-  <section id="laywers" class="meet-our-attorney">
+  <section id="laywers" class="team-section">
     <div class="container">
       <header class="section-header">
         <div class="header-wrapper">
@@ -120,28 +119,28 @@
       <ul class="team-list">
         <li>
           <div class="team-img">
-            <img src="img/lawyer-adam.png" alt="">
+            <img src="img/lawyer-adam.png" alt="Adam Suarez">
           </div>
           <h3>Adam Suarez</h3>
           <p>Attorney General</p>
         </li>
         <li>
           <div class="team-img">
-            <img src="img/lawyer-lina.png" alt="">
+            <img src="img/lawyer-lina.png" alt="Lina Suarez">
           </div>
           <h3>Lina Suarez</h3>
           <p>Attorney General</p>
         </li>
         <li>
           <div class="team-img">
-           <img src="img/lawyer-jems.png" alt="">
+           <img src="img/lawyer-jems.png" alt="Jems Snow">
           </div>
           <h3>Jems Snow</h3>
           <p>Attorney General</p>
         </li>
         <li>
           <div class="team-img">
-           <img src="img/lawyer-linister.png" alt="">
+           <img src="img/lawyer-linister.png" alt="Linister White">
           </div>
           <h3>Linister White</h3>
           <p>Attorney General</p>
@@ -150,14 +149,14 @@
     </div>
   </section>
 
-<section class="our-clients-say black-section">
+<section class="clients-section black-section">
   <div class="container">
     <header class="section-header">
       <div class="header-wrapper">
         <h2>Our Clients Say</h2>
         <p>We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.</p>
       </div>
-        <img src="img/client.png" alt="">
+        <img src="img/client.png" alt="Client">
         <blockquote>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
           <h3>Alon Smith</h3>
@@ -167,7 +166,7 @@
   </div>
 </section>
 
-<section id="publications" class="recent-publications">
+<section id="publications" class="publications-section">
   <div class="container">
     <header class="section-header">
       <div class="header-wrapper">
@@ -176,28 +175,28 @@
       </div>
     </header>
     <article>
-      <img src="img/article-img1.png" alt="">
+      <img src="img/article-img1.png" alt="Article 1">
       <h2>Publication Tite</h2>
       <h3><span>By </span>Adam Suarez</h3>
-      <time class="date-publication">11, Nov 2015</time>
+      <span class="date-publication">11, Nov 2015</span>
       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
       <p class="comments"><a href="">29 Comments</a></p>
       <button class="share">Share</button>
     </article>
     <article>
-      <img src="img/article-img2.png" alt="">
+      <img src="img/article-img2.png" alt="Article 2">
       <h2>Publication Tite</h2>
       <h3><span>By </span>Adam Suarez</h3>
-      <time class="date-publication">11, Nov 2015</time>
+      <span class="date-publication">11, Nov 2015</span>
       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
       <p class="comments"><a href="">29 Comments</a></p>
       <button class="share">Share</button>
     </article>
     <article>
-      <img src="img/article-img3.png" alt="">
+      <img src="img/article-img3.png" alt="Article 3">
       <h2>Publication Tite</h2>
       <h3><span>By </span>Adam Suarez</h3>
-      <time class="date-publication">11, Nov 2015</time>
+      <span class="date-publication">11, Nov 2015</span>
       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
       <p class="comments"><a href="">29 Comments</a></p>
       <button class="share">Share</button>
@@ -219,7 +218,7 @@
   </div>
 </section>
 
-<section id="contact" class="free-contact">
+<section id="contact" class="contact-section">
   <div class="container">
     <header class="section-header">
       <div class="header-wrapper">
@@ -228,15 +227,15 @@
       </div>
     </header>
     <div class="our-contact">
-    <form>
+    <form class="form-message">
       <input type="text" name="name" placeholder="Enter your name..." />
-      <input type="email" name="email" placeholder="Enter your email..." />
+      <input type="email" name="email" placeholder="Enter your email..." required />
       <input type="number" name="phone" placeholder="Enter your phone..." />
-      <textarea name="message" placeholder="Enter your message..."></textarea>
+      <textarea rows="5" name="message" placeholder="Enter your message..."></textarea>
       <button name="submit" type="submit" value="send">Send Message</button>
     </form>
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d917.5046012782204!2d32.09503538980664!3d49.426019819972836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1508444986478" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d917.5046012782204!2d32.09503538980664!3d49.426019819972836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1508444986478" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -244,22 +243,20 @@
 
 <footer class="black-section overflow">
     <div class="container">
-        <p class="copyright">Copyright &copy
-          <a href="">Symu.co</a>
-        </p>
+        <p class="copyright">Copyright &copy; <a>Symu.co</a></p>
       <nav>
         <ul class="social">
           <li>
-            <a>1</a>
+            <a><i class="fa fa-facebook" aria-hidden="true"></i></a>
           </li>
           <li>
-            <a class="">2</a>
+            <a><i class="fa fa-twitter" aria-hidden="true"></i></a>
           </li>
           <li>
-            <a class="">3</a>
+            <a><i class="fa fa-google-plus" aria-hidden="true"></i></a>
           </li>
           <li>
-            <a class="">4</a>
+            <a><i class="fa fa-instagram" aria-hidden="true"></i></a>
           </li>
         </ul>
       </nav>
