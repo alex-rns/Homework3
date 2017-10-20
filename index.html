@@ -19,22 +19,22 @@
       <nav class="main-nav">
         <ul>
           <li>
-            <a href="#">about us</a>
+            <a href="#about" class="active">about us</a>
           </li>
           <li>
-            <a href="/">practice area</a>
+            <a href="#practice">practice area</a>
           </li>
           <li>
-            <a href="">laywers</a>
+            <a href="#laywers">laywers</a>
           </li>
           <li>
-            <a href="">publications</a>
+            <a href="#publications">publications</a>
           </li>
           <li>
-            <a href="">faq</a>
+            <a href="#faq">faq</a>
           </li>
           <li>
-            <a href="">contact</a>
+            <a href="#contact">contact</a>
           </li>
 
         </ul>
@@ -45,7 +45,7 @@
   <section class="welcome-section">
     <div class="container">
       <div class="welcome-info yellow-line">
-        <div class="welcome-infowrap">
+        <div class="welcome-infowrap header-wrapper">
           <h1>Adam Suaerez</h1>
           <h2>Laywer</h2>
         </div>
@@ -54,7 +54,7 @@
     </div>
   </section>
 
-  <section class="about-section">
+  <section id="about" class="about-section">
     <div class="container">
       <header class="section-header">
         <div class="header-wrapper">
@@ -77,10 +77,10 @@
         <h3>Expertise</h3>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
       </div>
-
     </div>
   </section>
-  <section class="practice-section black-section">
+
+  <section id="practice" class="practice-section black-section">
     <div class="container">
       <header class="section-header">
         <div class="header-wrapper">
@@ -109,7 +109,7 @@
         </div>
   </section>
 
-  <section class="meet-our-attorney">
+  <section id="laywers" class="meet-our-attorney">
     <div class="container">
       <header class="section-header">
         <div class="header-wrapper">
@@ -167,7 +167,7 @@
   </div>
 </section>
 
-<section class="recent-publications">
+<section id="publications" class="recent-publications">
   <div class="container">
     <header class="section-header">
       <div class="header-wrapper">
@@ -205,7 +205,7 @@
   </div>
 </section>
 
-<section class="faq-section black-section">
+<section id="faq" class="faq-section black-section">
   <div class="container">
     <header class="section-header">
       <div class="header-wrapper">
@@ -219,7 +219,7 @@
   </div>
 </section>
 
-<section class="free-contact">
+<section id="contact" class="free-contact">
   <div class="container">
     <header class="section-header">
       <div class="header-wrapper">
@@ -229,11 +229,11 @@
     </header>
     <div class="our-contact">
     <form>
-      <input type="text" placeholder="Enter your name...">
-      <input type="email" placeholder="Enter your email...">
-      <input type="number" placeholder="Enter your phone...">
-      <textarea placeholder="Enter your message..."></textarea>
-      <button type="submit">Send Message</button>
+      <input type="text" name="name" placeholder="Enter your name..." />
+      <input type="email" name="email" placeholder="Enter your email..." />
+      <input type="number" name="phone" placeholder="Enter your phone..." />
+      <textarea name="message" placeholder="Enter your message..."></textarea>
+      <button name="submit" type="submit" value="send">Send Message</button>
     </form>
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d917.5046012782204!2d32.09503538980664!3d49.426019819972836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1508444986478" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -241,17 +241,29 @@
     </div>
   </div>
 </section>
-<footer class="black-section">
-  <header class="main-header overflow">
-    <div class="container">
-      <a class="logo">
-        <img src="img/logo.png" alt="Advocatus">
-      </a>
-      <nav class="main-nav">
 
+<footer class="black-section overflow">
+    <div class="container">
+        <p class="copyright">Copyright &copy
+          <a href="">Symu.co</a>
+        </p>
+      <nav>
+        <ul class="social">
+          <li>
+            <a>1</a>
+          </li>
+          <li>
+            <a class="">2</a>
+          </li>
+          <li>
+            <a class="">3</a>
+          </li>
+          <li>
+            <a class="">4</a>
+          </li>
+        </ul>
       </nav>
     </div>
-  </header>
 </footer>
 
 </body>

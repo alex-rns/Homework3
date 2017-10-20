@@ -36,7 +36,7 @@ h2 {
   margin: 0; }
 
 section {
-  padding-bottom: 50px; }
+  padding: 0 15px 50px; }
 
 .section-header {
   position: relative;
@@ -79,13 +79,6 @@ section {
   .black-section p {
     color: #b9b9b9; }
 
-.yellow-line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 2px;
-  background: #e8bf5d; }
-
 button {
   font: 16px PlayfairDisplayRegular, serif;
   font-weight: bold;
@@ -94,7 +87,7 @@ button {
   display: inline-block;
   border-radius: 50px;
   background: #e8bf5d;
-  padding: 16px 60px;
+  padding: 16px 50px;
   -webkit-transition: background 0.5s ease;
   -o-transition: background 0.5s ease;
   transition: background 0.5s ease; }
@@ -115,12 +108,25 @@ button {
     .main-header .main-nav ul li {
       margin: 0 20px;
       display: inline-block; }
+      .main-header .main-nav ul li a {
+        padding-bottom: 10px; }
+    .main-header .main-nav .active {
+      border-bottom: 4px #e8bf5d solid; }
 
 .welcome-section {
+  position: relative;
   color: #ffffff;
-  background: url("../img/our-hero.png") 50% 0 no-repeat;
+  background: url("../img/our-hero-nograd.png") 50% 0 no-repeat;
   background-size: cover;
   height: calc(100vh - 110px); }
+  .welcome-section:before {
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: url("../img/welcome-gradient.png") repeat-x; }
   .welcome-section h2 {
     font-size: 31px; }
   .welcome-section .welcome-info {
@@ -308,27 +314,42 @@ button {
   padding: 50px;
   width: 450px; }
   .free-contact form input, .free-contact form textarea {
+    outline: none;
     resize: none;
     padding-left: 15px;
     width: 350px;
     line-height: 45px;
     border: 0;
     border-bottom: 1px #b9b9b9 solid;
-    color: #b9b9b9;
+    color: #666666;
     font-style: italic;
     font-size: 14px;
     display: block; }
-    .free-contact form input:active, .free-contact form textarea:active {
-      border: none; }
+  .free-contact form textarea {
+    line-height: 20px; }
   .free-contact form button {
     margin-top: 40px; }
 
 .free-contact .map {
   display: inline-block; }
   .free-contact .map iframe {
+    -webkit-box-shadow: -20px 20px 0 0 #e8bf5d;
+    box-shadow: -20px 20px 0 0 #e8bf5d;
     margin-bottom: 0;
     width: 330px;
     height: 330px; }
 
 footer {
   height: 80px; }
+  footer a {
+    color: #ffffff; }
+  footer .copyright {
+    float: left;
+    height: 50px;
+    line-height: 50px; }
+  footer .social {
+    height: 50px;
+    line-height: 50px;
+    float: right; }
+    footer .social li {
+      display: inline-block; }
